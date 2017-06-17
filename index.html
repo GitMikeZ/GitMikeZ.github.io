@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Wistia Uploader</title>
+	</head>
+	<body>
+		<script src="//fast.wistia.com/assets/external/api.js" async></script>
+		<link rel="stylesheet" href="//fast.wistia.com/assets/external/uploader.css" />
+		<div id="wistia_uploader" style="height:360px;width:640px;"></div>
+		<script>
+		window._wapiq = window._wapiq || [];
+		_wapiq.push(function(W) {
+			window.wistiaUploader = new W.Uploader({
+				accessToken: "ACCESS_TOKEN_GOES_HERE",
+				dropIn: "wistia_uploader",
+				projectId: "PROJECT_ID_GOES_HERE"
+			});
+		});
+		</script>
+	</body>
+</html>
