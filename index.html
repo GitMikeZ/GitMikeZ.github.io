@@ -2,24 +2,22 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Blue Imp Wistia Uploader</title>
+		<title>Wistia Uploader</title>
+		<link rel="stylesheet" href="//fast.wistia.com/assets/external/uploader.css" />
 	</head>
 	<body>
-		<input id="fileupload" type="file" name="_wapiq" data-url="https://process-st-mike.wistia.com/projects/bdse3s7d07" multiple>
-		<div id="wistia_uploader" style="height:360px;width:640px;"></div>
+		<Header>Angular Wistia Uploader</Header>
+		<Section>
+		<div id="wistia_upload_button_button_only" alt="Upload Video"></div>
 		<script>
-		window._wapiq = window._wapiq || [];
-		$(function () {
-				$('#fileupload').fileupload({
-					_wapiq:push(function(W) {
-						window.wistiaUploader = new W.Uploader({
-							accessToken: "3648f63eda4f262ea320db0e1c59661098aba8fa14f92d4a1c393313b18efc18",
-							dropIn: "wistia_uploader",
-							projectId: "bdse3s7d07"
-						});
-					}),
+			window._wapiq = window._wapiq || [];
+			_wapiq.push(function(W) {
+				window.wistiaUploaderButtonOnly = new W.Uploader({
+					accessToken: "7dc7c6050850b2a4fa386519473f06574e540ae1bbf587172a812f1cff7b7c1d",
+					button: "wistia_upload_button_button_only",
+					projectId: "bdse3s7d07"
 				});
-		});
+			});
 		</script>
 		<script src="//code.angularjs.org/snapshot/angular.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
