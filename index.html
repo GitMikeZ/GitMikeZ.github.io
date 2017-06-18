@@ -9,9 +9,18 @@
 		<Header>Angular Wistia Uploader</Header>
 		<Section>
 		<div id="wistia_upload_button_button_only" alt="Upload Video"></div>
+		<script>
+			window._wapiq = window._wapiq || [];
+			_wapiq.push(function(W) {
+			window.wistiaUploaderButtonOnly = new W.Uploader({
+					accessToken: "7dc7c6050850b2a4fa386519473f06574e540ae1bbf587172a812f1cff7b7c1d",
+					button: "wistia_upload_button_button_only",
+					projectId: "bdse3s7d07"
+				});
+			});
+		</script>
 		<script src="//code.angularjs.org/snapshot/angular.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="//fast.wistia.com/assets/external/api.js" async></script>
-		<script src="js.app.js"></script>
 	</body>
 </html>
