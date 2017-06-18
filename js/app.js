@@ -1,5 +1,4 @@
 
-
 window._wapiq = window._wapiq || [];
 
 function videoObject () {
