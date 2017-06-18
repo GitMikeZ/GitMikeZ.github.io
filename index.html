@@ -5,27 +5,27 @@
 		<title>Blue Imp Wistia Uploader</title>
 	</head>
 	<body>
-		<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+		<input id="fileupload" type="file" name="_wapiq" data-url="https://process-st-mike.wistia.com/projects/bdse3s7d07" multiple>
 		<div id="wistia_uploader" style="height:360px;width:640px;"></div>
 		<script>
+		window._wapiq = window._wapiq || [];
 		$(function () {
 				$('#fileupload').fileupload({
-						window._wapiq = window._wapiq || [];
-						_wapiq.push(function(W) {
-							window.wistiaUploader = new W.Uploader({
-								accessToken: "3648f63eda4f262ea320db0e1c59661098aba8fa14f92d4a1c393313b18efc18",
-								dropIn: "wistia_uploader",
-								projectId: "bdse3s7d07"
-							});
+					_wapiq:push(function(W) {
+						window.wistiaUploader = new W.Uploader({
+							accessToken: "3648f63eda4f262ea320db0e1c59661098aba8fa14f92d4a1c393313b18efc18",
+							dropIn: "wistia_uploader",
+							projectId: "bdse3s7d07"
 						});
+					}),
 				});
 		});
 		</script>
 		<script src="//code.angularjs.org/snapshot/angular.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="//fast.wistia.com/assets/external/api.js" async></script>
+		<script src="js/jquery.fileupload.js"></script>
 		<script src="js/vendor/jquery.ui.widget.js"></script>
 		<script src="js/jquery.iframe-transport.js"></script>
-		<script src="js/jquery.fileupload.js"></script>
 	</body>
 </html>
