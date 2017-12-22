@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Wistia Upload</title>
-  <link rel="stylesheet" href="/lib/css/style.css">
-</head>
-<body ng-app="wng-app" ng-controller="MainController as ctrl">
-  <div class="container">
-    <section>
-      <h1>-wng-uploader-</h1>
-      <wistia-upload class="wistia-upload" state="ctrl.state" on-update="ctrl.setState(ctrl.state)"></wistia-upload>
-    </section>
-  </div>
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-	<script src="lib/angular/angular.min.js"></script>
-	<script src="lib/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
-	<script src="lib/blueimp-file-upload/js/jquery.fileupload.js"></script>
-	<script src="lib/blueimp-file-upload/js/jquery.fileupload-angular.js"></script>
-  <script src="src/app.js"></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="lib/css/style.css">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<title>Mike's Portfolio</title>
+	</head>
+	<body ng-app="ng-portfolio">
+			<header>Mike's Portfolio</header>
+			<div class="row">
+				<div class="col-md-10 col-offset-1">
+					<div class="col-md-5">
+						<img src="lib/images/java.png">
+					</div>
+					<div class="col-md-5">
+						<img src="lib/images/google_maps.png">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-offset-1">
+					<div class="col-md-5">
+						<img src="lib/images/react.png">
+					</div>
+					<div class="col-md-5">
+						<img src="lib/images/nodejs.png">
+					</div>
+				</div>
+			</div>
+			<footer>
+				<p>Made with &#9825; by Mike</p>
+			</footer>
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/angular/angular.min.js"></script>
+	</body>
 </html>
