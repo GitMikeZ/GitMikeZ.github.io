@@ -7,31 +7,49 @@
 		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 		<title>Mike's Portfolio</title>
 	</head>
-	<body ng-app="ng-portfolio">
+	<body align="center" ng-app="ng-portfolio">
+		<div class="container">
 			<header>Mike's Portfolio</header>
-			<div class="row">
-				<div class="col-md-10 col-offset-1">
-					<div class="col-md-5">
-						<img src="lib/images/java.png">
+			<section align="center" class="introduction">
+				<div class="row">
+					<div class="intro col-md-12">
+						<img src="lib/images/bk5.jpg">
 					</div>
-					<div class="col-md-5">
+				</div>
+			</section>
+			<br>
+			<section class="projects">
+				<h1>Projects</h1>
+				<div class="row">
+					<div class="project col-md-6">
+						<img src="lib/images/android.png">
+					</div>
+					<div class="project col-md-6">
 						<img src="lib/images/google_maps.png">
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 col-offset-1">
-					<div class="col-md-5">
+				<div class="row">
+					<div class="project col-md-6">
 						<img src="lib/images/react.png">
 					</div>
-					<div class="col-md-5">
+					<div class="project col-md-6">
 						<img src="lib/images/nodejs.png">
 					</div>
 				</div>
-			</div>
+			</section>
+			<br>
+			<section>
+				<h1></h1>
+				<div class="skills">
+					<h1>Skills</h1>
+					<img src="lib/images/bk4.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat consectetur pellentesque. Nam ac elit risus, ac blandit dui. Duis rutrum porta tortor ut convallis.</p>
+				</div>
+			</section>
 			<footer>
-				<p>Made with &#9825; by Mike</p>
+				<p>Made by Mike</p>
 			</footer>
+		</div>
 		<script src="lib/jquery/jquery.min.js"></script>
 		<script src="lib/angular/angular.min.js"></script>
 	</body>

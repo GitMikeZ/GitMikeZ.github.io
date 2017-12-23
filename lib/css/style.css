@@ -1,5 +1,25 @@
-img {
-	width: 250px;
-	height: 250px;
+body {
+	align-items: center;
+	background: linear-gradient(white, lightblue);
+}
+
+.intro img {
+	width: 750px;
+	height: 300px;
 	display: block;
+	margin: auto;
+}
+
+.project img {
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: auto;
+	padding: 10px;
+}
+
+.skills img {
+	height: 200px;
+	width: 100px;
+	align-self: left;
 }
