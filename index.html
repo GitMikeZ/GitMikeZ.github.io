@@ -3,13 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="lib/css/style.css">
 		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-		<title>Mike's Portfolio</title>
+		<title>Portfolio</title>
 	</head>
 	<body align="center" ng-app="ng-portfolio">
 		<div class="container">
-			<header>Mike's Portfolio</header>
+			<header>
+				<h1>@MZ Portfolio</h1>
+			</header>
+			<br>
 			<section align="center" class="introduction">
 				<div class="row">
 					<div class="intro col-md-12">
@@ -19,21 +23,25 @@
 			</section>
 			<br>
 			<section class="projects">
-				<h1>Projects</h1>
+				<h1>Featured</h1>
 				<div class="row">
 					<div class="project col-md-6">
 						<img src="lib/images/android.png">
+						<h4>Andoid</h4>
 					</div>
 					<div class="project col-md-6">
 						<img src="lib/images/google_maps.png">
+						<h4>Google Maps</h4>
 					</div>
 				</div>
 				<div class="row">
 					<div class="project col-md-6">
 						<img src="lib/images/react.png">
+						<h4>React</h4>
 					</div>
 					<div class="project col-md-6">
 						<img src="lib/images/nodejs.png">
+						<h4>Nodejs</h4>
 					</div>
 				</div>
 			</section>
@@ -41,13 +49,32 @@
 			<section>
 				<h1></h1>
 				<div class="skills">
-					<h1>Skills</h1>
-					<img src="lib/images/bk4.jpg">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat consectetur pellentesque. Nam ac elit risus, ac blandit dui. Duis rutrum porta tortor ut convallis.</p>
+					<h1>About</h1>
+					<div class="col-md-6">
+						<img src="lib/images/bk4.jpg">
+					</div>
+					<div class="col-md-6">
+						<p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat consectetur pellentesque. Nam ac elit risus, ac blandit dui. Duis rutrum porta tortor ut convallis.</p>
+						<ul align="left">
+							<h4>Programming Languages</h3>
+							<li>Java</li>
+							<br>
+							<h4>Scripting Languages</h3>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>JSX</li>
+							<br>
+							<h3>Frameworks</h3>
+							<li>React</li>
+							<li>Angular</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 			<footer>
-				<p>Made by Mike</p>
+				<div class="col-md-12">
+					<h4>Made by Mike</h4>
+				</div>
 			</footer>
 		</div>
 		<script src="lib/jquery/jquery.min.js"></script>

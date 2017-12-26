@@ -1,13 +1,27 @@
 body {
+	letter-spacing: 1px;
+	font-family: "Ariel", Serif, Georgia;
 	align-items: center;
-	background: linear-gradient(white, lightblue);
+	background: linear-gradient(white, darkcyan);
+}
+
+header h1 {
+	text-align: left;
 }
 
 .intro img {
-	width: 750px;
-	height: 300px;
+	width: 90%;
+	height: 350px;
+	border: 10px;
 	display: block;
 	margin: auto;
+}
+
+@media (max-width: 350px) {
+	.intro img {
+		width: 350px;
+		height: 300px;
+	}
 }
 
 .project img {
@@ -19,7 +33,19 @@ body {
 }
 
 .skills img {
-	height: 200px;
-	width: 100px;
-	align-self: left;
+	height: 375px;
+	width: 250px;
+	margin-left: 20%;
+	float: left;
 }
+
+.skills li {
+	align-items: left;
+	margin-left: 5%;
+}
+
+footer {
+	background-color: black;
+}
+
+
